@@ -7,12 +7,18 @@
 
 import Foundation
 
-print("Enter the first valeu!") //вывести первое значение
-let a = readLine() //получение первого числа на консоль
-
-print("Enter the second value!") //вывести второе значение
-let b = readLine() //получение второго числа на консоль
-
-let result = sum(a, b) //вызвали функцию sum в параметр и передали параметры
-print("Console output = \(result)") //вывод на консоль
-
+var num1: String?
+repeat {
+    print("Введите числовое значение первого аргумента")
+    num1 = readLine()
+} while Int(num1!) == nil
+//запрос второго аргумента
+var num2: String?
+repeat {
+    print("Введите числовое значение второго аргумента")
+    num2 = readLine()
+} while Int(num2!) == nil
+//подсчет суммы аргументов
+var result = sum(num1, num2)
+//вывод результата на консоль
+print("Результат сложения - \(result)")
