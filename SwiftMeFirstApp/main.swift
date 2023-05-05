@@ -13,4 +13,7 @@ let firstArgument = getArgumentFromConsole(argumentNumber: 1) //запись в 
 let secondArgument = getArgumentFromConsole(argumentNumber: 2) //запись в переменную func(_), запрос второго аргумента
 var result = firstArgument + secondArgument     //подсчет суммы аргументов
 
+
+
+
 print("Результат сложения - \(result)") //вывод результата на консоль
